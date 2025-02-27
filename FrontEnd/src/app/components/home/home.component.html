@@ -1,0 +1,62 @@
+
+
+    
+
+    
+
+    <!-- Hero Section -->
+    <div class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Welcome to Customer Management</h1>
+            <p class="lead">Easily manage your customer data. Add, view, update, and delete records seamlessly.</p>
+            <a href="#" class="btn btn-outline-light btn-lg"  [routerLink]="['/customer']">Get Started</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <i class="bi bi-person-plus fs-1 text-dark"></i>
+                        <h5 class="card-title mt-3">Add Customer</h5>
+                        <p class="card-text">Easily add new customers to your database.</p>
+                        <a class="btn btn-outline-dark" [routerLink]="['/customer']">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <i class="bi bi-list-ul fs-1 text-dark"></i>
+                        <h5 class="card-title mt-3">View Customers</h5>
+                        <p class="card-text">View a list of all registered customers.</p>
+                        <a  [routerLink]="['/viewCustomer']" class="btn btn-outline-dark">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <i class="bi bi-pencil-square fs-1 text-dark"></i>
+                        <h5 class="card-title mt-3">Update Customer</h5>
+                        <p class="card-text">Edit customer information in just a few clicks.</p>
+                        <a href="#" class="btn btn-outline-dark" [routerLink]="['/updateCustomer']">Update</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <i class="bi bi-trash fs-1 text-dark"></i>
+                        <h5 class="card-title mt-3">Delete Customer</h5>
+                        <p class="card-text">Remove outdated or incorrect customer records.</p>
+                        <a  class="btn btn-outline-danger" [routerLink]="['/deleteCustomer']">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
